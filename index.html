@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador Final Curso Javascript Coderhouse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        .animate__animated {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Básica</h1>
+        <div>
+            <label for="num1">Primer número:</label>
+            <input type="number" id="num1">
+        </div>
+        <div>
+            <label for="num2">Segundo número:</label>
+            <input type="number" id="num2">
+        </div>
+        <div>
+            <label for="operacion">Operación:</label>
+            <select id="operacion">
+                <option value="1">Suma</option>
+                <option value="2">Resta</option>
+                <option value="3">Multiplicación</option>
+                <option value="4">División</option>
+                <option value="5">Porcentaje</option>
+            </select>
+        </div>
+        <button id="calcular">Calcular</button>
+        <h2 id="resultado" class="animate__animated">Resultado: </h2>
+        <h3>Estadísticas:</h3>
+        <div id="estadisticas"></div>
+        <h3>Clima Actual:</h3>
+        <div id="clima"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
